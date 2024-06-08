@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Employee-Skill-Search-Report
+  datasource:
+    url: jdbc:mysql://localhost:3306/employeeskillsearchreport?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddlauto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    host: smtpauth.in.msg.de
+    username: svc_smtp_ESR-Admin@msg-global.com
+    password: 2FPHcaDIHkM19hbpicm!
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
